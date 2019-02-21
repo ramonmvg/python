@@ -33,7 +33,7 @@ if down < 500 or uplo < 50:
     #cursor.execute("INSERT INTO tb_homelinestat (pubip, operador, servidorpru, lat, download, upload, url) VALUES (%s,%s,%s,%s,%s,%s,%s)",(pubip, isp, server, ping, download, upload, url))
     #mariadb_connection.commit()
     #mariadb_connection.close()
-    bot.send_message(chat_id="-295141763", text=url+' Hay un problema en la linea')
+    bot.send_message(chat_id="xxxxxxx", text=url+' Hay un problema en la linea')
 else:
     print ("Velocidad correcta")
     print (download, upload, ping, url)

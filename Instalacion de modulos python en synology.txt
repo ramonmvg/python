@@ -1,0 +1,29 @@
+*****************************************************************************************************************************************************************
+*									Sobre este documento									*
+*****************************************************************************************************************************************************************
+El cometido de este documento es la documentacion de las acciones necesarias para la instalacion de modulos y otras utilidades de python en un NAS de la marca 
+synology. Soy muy olvidadizo y luego no recuerdo nunca como se hacian ciertas cosas
+
+
+*****************************************************************************************************************************************************************
+*									Python en Synology									*
+*****************************************************************************************************************************************************************
+En los NAS Synology nos encontramos que la version de python2.7 ya esta instalada, por lo que parece esta version no de la deja desinstalar por lo que he estado
+viendo en diferentes foros. Por lo que si queremos usar otra version de python esta debe convivir con python2.7.
+
+
+*****************************************************************************************************************************************************************
+*								Instalacion Python en Synology									*
+*****************************************************************************************************************************************************************
+Se puede realizar la instalacion facilmente desde el centro de paquetes de Synology, tambien hay otras versiones de la comunidad disponibles para instalar desde
+el centro de paquetes
+
+
+*****************************************************************************************************************************************************************
+*								Instalacion Modulos Python en Synology								*
+*****************************************************************************************************************************************************************
+Para la instalacion de modulos en una version concreta de python podemos hacerlo de la siguiente manera:
+Instalacion de paquetes en 3.5:
+user@srv:/volumeX/@appstore/py3k/usr/local/lib/python3.5/site-packages$ sudo python3.5 easy_install.py speedtest-cli
+Tambien podemos usar pip:
+sudo python3.5 pip install <paquete>
